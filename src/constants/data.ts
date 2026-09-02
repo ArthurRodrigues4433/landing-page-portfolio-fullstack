@@ -20,77 +20,66 @@ export const SKILLS: string[] = [
   "Problem solving"
 ];
 
-export const PROJECTS = [
+export interface Project {
+  index: string;
+  title: string;
+  desc: string;
+  stack: string[];
+  year: string;
+  role: string;
+  image: string;
+  link?: string;
+}
+
+export const PROJECTS: Project[] = [
   {
     index: "01",
-    title: "bank-sys-dio-challenge",
-    desc: "Sistema bancário simples criado durante bootcamp: contas, autenticação básica, depósitos, saques e extratos. Código pensado para aprendizado de lógica de negócio em Python.",
-    stack: ["Python", "CLI", "Arquitetura simples"],
-    year: "2024",
-    role: "Desenvolvedor"
+    title: "Valora-Scan",
+    desc: "Sistema de gestão de feiras com OCR: aplicação full-stack que permite aos usuários criar feiras, adicionar produtos via foto de etiqueta com reconhecimento automático de preços (varejo/atacado) e calcular o orçamento total. Backend em FastAPI com autenticação JWT e frontend em React.",
+    stack: ["Python", "FastAPI", "React","JavaScript", "OCR", "JWT", "Full-Stack"],
+    year: "2026",
+    role: "Full-Stack Developer",
+    image: "/projects/valora-scan.png",
+    link: ""
   },
   {
     index: "02",
-    title: "Saturn",
-    desc: "API para operações de compra e venda de criptomoedas. Implementa endpoints para negociação e lógica de ordens, com foco em rotinas de backend e manipulação de dados.",
-    stack: ["Python", "API", "REST"],
-    year: "2025",
-    role: "Backend"
+    title: "Nogueira & Nogueira Associados (LandingPage)",
+    desc: "Sistema de gestão de feiras com OCR: aplicação full-stack que permite aos usuários criar feiras, adicionar produtos via foto de etiqueta com reconhecimento automático de preços (varejo/atacado) e calcular o orçamento total. Backend em FastAPI com autenticação JWT e frontend em React.",
+    stack: ["Python", "FastAPI", "React", "OCR", "SQL", "JWT", "Full-Stack"],
+    year: "2026",
+    role: "Produção",
+    image: "/projects/advogados.png",
+    link: "https://www.nogueirasadvogados.com.br/"
   },
   {
-    index: "03",
+    index: "04",
     title: "Todo-list-em-react-e-python",
     desc: "Aplicação full‑stack com frontend em React e backend em Python: cadastro de tarefas, persistência e integração via API REST — projeto para treinar integração cliente/servidor.",
     stack: ["React", "Python", "REST"],
     year: "2024",
-    role: "Full‑Stack"
+    role: "Full‑Stack",
+    image: "/projects/todo-list.png",
+    link: "https://github.com/ArthurRodrigues4433/Todo-list-em-react-e-python"
   },
   {
-    index: "04",
+    index: "05",
     title: "pydoll",
     desc: "Biblioteca para automação de navegadores baseados em Chromium sem WebDriver, focada em interações realistas e automação de fluxo.",
     stack: ["Automação", "Chromium", "Library"],
     year: "2024",
-    role: "Autor"
-  },
-  {
-    index: "05",
-    title: "safe-chat-slack-bot",
-    desc: "Slack bot open‑source voltado para segurança de dados em workspaces: automatiza verificações e pode ser usado como base para integrações de segurança.",
-    stack: ["Slack", "Bot", "Automação"],
-    year: "2024",
-    role: "Contribuidor"
+    role: "Autor",
+    image: "/projects/pydoll.png",
+    link: "https://github.com/ArthurRodrigues4433/pydoll"
   },
   {
     index: "06",
     title: "Ochattinho-BOT",
     desc: "Bot em Python para chat/automação — projeto prático para aprendizagem de integração com APIs de mensagens e lógica de conversação.",
-    stack: ["Python", "Bot", "Automação"],
+    stack: ["Python"],
     year: "2023",
-    role: "Desenvolvedor"
-  },
-  {
-    index: "07",
-    title: "SISTEMA-DE-RESERVA-DE-QUARTOS",
-    desc: "Mini‑Airbnb em terminal: sistema de reserva e gerenciamento de quartos via CLI, útil para praticar modelagem de dados e regras de negócio.",
-    stack: ["Python", "CLI", "Modelagem"],
-    year: "2023",
-    role: "Desenvolvedor"
-  },
-  {
-    index: "08",
-    title: "Gerenciador-de-Tarefas-CLI",
-    desc: "Gerenciador de tarefas pelo terminal com persistência simples — projeto focado em UX de linha de comando e automação de fluxos cotidianos.",
-    stack: ["Python", "CLI"],
-    year: "2023",
-    role: "Autor"
-  },
-  {
-    index: "09",
-    title: "treino-fullstack",
-    desc: "Repositório de experimentos e exercícios full‑stack: provas de conceito que unem frontend React e backends em Python.",
-    stack: ["React", "Python", "Experiment"],
-    year: "2024",
-    role: "Full‑Stack"
+    role: "Desenvolvedor",
+    image: "/projects/chatinhobot.png",
+    link: "https://github.com/ArthurRodrigues4433/Ochattinho-BOT"
   }
-] as const;
+];

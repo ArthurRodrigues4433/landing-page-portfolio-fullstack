@@ -2,12 +2,13 @@ import { useEffect } from "react";
 
 function useReveal() {
   useEffect(() => {
-    const els = document.querySelectorAll(".reveal, .reveal-left");
+    const els = document.querySelectorAll(".reveal, .reveal-left, .project-image-reveal, .project-content-reveal");
     const observer = new IntersectionObserver(
       (entries) => {
-        entries.forEach((e, i) => {
+        entries.forEach((e) => {
           if (e.isIntersecting) {
-            setTimeout(() => e.target.classList.add("visible"), i * 80);
+            const delay = Number((e.target as HTMLElement).dataset.delay || 0);
+            setTimeout(() => e.target.classList.add("visible"), delay);
             observer.unobserve(e.target);
           }
         });
