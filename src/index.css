@@ -5,14 +5,16 @@
 @tailwind utilities;
 
 :root {
-  --color-bg: #080808;
-  --color-bg-hover: #0f0f0f;
-  --color-text-primary: #e8e8e8;
-  --color-text-secondary: #888;
-  --color-text-tertiary: #555;
-  --color-text-muted: #333;
-  --color-accent: #00ff87;
-  --color-border: #1f1f1f;
+  --color-bg: #101214;
+  --color-bg-hover: #181C1F;
+  --color-bg-nav-scrolled: rgba(16,18,20,0.94);
+  --color-text-primary: #E8EAEC;
+  --color-text-secondary: #A1A8AE;
+  --color-text-tertiary: #737C84;
+  --color-text-muted: #555E65;
+  --color-accent: #79B89A;
+  --color-border: #30383D;
+  --color-cursor-glow: rgba(121,184,154,0.07);
 }
 
 html, body, #root {
@@ -131,7 +133,7 @@ body {
   width: 320px;
   height: 320px;
   border-radius: 50%;
-  background: radial-gradient(circle, var(--color-accent) 0%, transparent 70%);
+  background: radial-gradient(circle, var(--color-cursor-glow) 0%, transparent 70%);
   transform: translate(-50%, -50%);
   z-index: 0;
   transition: left 0.12s ease, top 0.12s ease;

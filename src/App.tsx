@@ -15,7 +15,7 @@ export default function App() {
   }, []);
 
   return (
-    <div className={`bg-[#080808] min-h-screen relative ${mounted ? "intro-fade" : "opacity-0"}`}>
+    <div className={`bg-bg min-h-screen relative ${mounted ? "intro-fade" : "opacity-0"}`}>
       <CursorGlow />
       <Nav />
       <Hero />
