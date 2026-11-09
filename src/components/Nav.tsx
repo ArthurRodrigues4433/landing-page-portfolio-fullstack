@@ -23,7 +23,9 @@ function Nav() {
           alt="Arthur R. logo"
           className="h-6 w-6 object-contain"
         />
-        <span className="font-mono text-xs tracking-widest text-primary uppercase">Arthur-R.dev</span>
+        <span className="hidden sm:inline font-mono text-xs tracking-widest text-primary uppercase">
+          Arthur-R.dev
+        </span>
       </a>
       <div className="flex gap-8">
         <a href="#work" className="nav-link">Projetos</a>
